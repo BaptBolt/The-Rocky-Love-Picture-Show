@@ -35,15 +35,35 @@ class HomeController extends AbstractController
     public function match()
     {
         $matchManager = new MatchManager();
-        $matchs = $matchManager->selectAll();
+        $lovers = $matchManager->selectMatch();
+        foreach ($lovers as $lover) {
+            $loveUser = 100; // remplacer par $_POST['loveStyle'] etc.
+            $foodUser = 0;
+            $ethicUser = 60;
+            $partyUser = 30;
+            $id = $lover['id'];
+            $loveRate = abs($loveUser - $lover['loveStyle']);
+            $loveMatch = 100 - $loveRate;
+            $foodRate = abs($foodUser - $lover['food']);
+            $foodMatch = 100 - $foodRate;
+            $ethicRate = abs($ethicUser - $lover['ethic']);
+            $ethicMatch = 100 - $ethicRate;
+            $partyRate = abs($partyUser - $lover['partyMonster']);
+            $partyMatch = 100 - $partyRate;
+            $totalMatch = ($loveMatch + $foodMatch + $ethicMatch + $partyMatch) / 4;
 
-        foreach ($matchs as $match) {
-            var_dump($match);
-            echo"<br>";
-            echo"<br>";
+            $matchManager->addMatch($totalMatch, $id);
+            $soulmates = $matchManager->selectByMatch();
         }
-    }
+        foreach ($soulmates as $soulmate) {
+            var_dump($soulmate['name']);
+            var_dump($soulmate['matchRate']);
+            echo "<br>";
+            echo "<br>";
+        }
 
+    }
+  
     public function monsters()
     {
         $monstersApi = new ApiMonstersModel();
