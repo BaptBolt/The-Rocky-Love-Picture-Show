@@ -37,6 +37,8 @@
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/event-dispatcher-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/filesystem" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/options-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />

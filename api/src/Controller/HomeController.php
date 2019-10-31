@@ -70,7 +70,11 @@ class HomeController extends AbstractController
         $monsters = $monstersApi->getMonsters();
 
 
-        header("Content-Type: application/json");
-        return json_encode($monsters);
+        foreach ($monsters as $monster) {
+            var_dump($monster);
+            // header("Content-Type: application/json");
+            // return json_encode($monsters);
+
+        }
     }
 }
