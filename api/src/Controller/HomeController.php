@@ -8,6 +8,9 @@
 
 namespace App\Controller;
 
+use App\Model\MatchManager;
+use App\Model\ApiMonstersModel;
+
 class HomeController extends AbstractController
 {
 
@@ -22,5 +25,55 @@ class HomeController extends AbstractController
     public function index()
     {
         return $this->twig->render('Home/index.html.twig');
+    }
+
+    public function form()
+    {
+        return $this->twig->render('Home/form.html.twig');
+    }
+
+    public function match()
+    {
+        $matchManager = new MatchManager();
+        $lovers = $matchManager->selectMatch();
+        foreach ($lovers as $lover) {
+            $loveUser = 100; // remplacer par $_POST['loveStyle'] etc.
+            $foodUser = 0;
+            $ethicUser = 60;
+            $partyUser = 30;
+            $id = $lover['id'];
+            $loveRate = abs($loveUser - $lover['loveStyle']);
+            $loveMatch = 100 - $loveRate;
+            $foodRate = abs($foodUser - $lover['food']);
+            $foodMatch = 100 - $foodRate;
+            $ethicRate = abs($ethicUser - $lover['ethic']);
+            $ethicMatch = 100 - $ethicRate;
+            $partyRate = abs($partyUser - $lover['partyMonster']);
+            $partyMatch = 100 - $partyRate;
+            $totalMatch = ($loveMatch + $foodMatch + $ethicMatch + $partyMatch) / 4;
+
+            $matchManager->addMatch($totalMatch, $id);
+            $soulmates = $matchManager->selectByMatch();
+        }
+        foreach ($soulmates as $soulmate) {
+            var_dump($soulmate['name']);
+            var_dump($soulmate['matchRate']);
+            echo "<br>";
+            echo "<br>";
+        }
+
+    }
+
+    public function monsters()
+    {
+        $monstersApi = new ApiMonstersModel();
+        $id = rand(0, 20);
+        $monster = $monstersApi->getMonsterById($id);
+
+        return $this->twig->render('Home/monsters.html.twig', ["monster" => $monster,
+            ]);
+
+        // header("Content-Type: application/json");
+        // return json_encode($monsters);
     }
 }

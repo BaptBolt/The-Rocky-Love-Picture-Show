@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/api/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/gitonomy/gitlib" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/jean85/pretty-package-versions" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/di" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/neon" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/php-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/robot-loader" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ocramius/package-versions" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/pdepend/pdepend" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpmd/phpmd" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpro/grumphp" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpstan/phpdoc-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/seld/jsonlint" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/squizlabs/php_codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/http-client-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/options-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/twig/twig" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

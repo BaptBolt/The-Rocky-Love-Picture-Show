@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/api/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/api/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/api/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/api/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/api/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api/vendor/composer" />
+      <path value="$PROJECT_DIR$/api/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/api/vendor/gitonomy/gitlib" />
+      <path value="$PROJECT_DIR$/api/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/api/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/api/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/api/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/api/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/api/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/api/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/api/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/api/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/di" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/bootstrap" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/php-generator" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/robot-loader" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/finder" />
+      <path value="$PROJECT_DIR$/api/vendor/nette/neon" />
+      <path value="$PROJECT_DIR$/api/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/api/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/api/vendor/phpro/grumphp" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/api/vendor/symfony/http-client" />
+    </include_path>
+  </component>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="d4f52f7f-bf3a-4011-a58b-21c7552865d6" name="PHP latest" home="$USER_HOME$/Library/Caches/PhpStorm2019.2/plugins/idea-php-latest-plugin/php-v7.3.1/php.sh" debugger_id="php.debugger.XDebug" />
+    </interpreters>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+</project>
