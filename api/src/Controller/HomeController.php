@@ -24,16 +24,21 @@ class HomeController extends AbstractController
      */
     public function index()
     {
+        header("Access-Control-Allow-Origin :*");
         return $this->twig->render('Home/index.html.twig');
     }
 
     public function form()
     {
+        header("Access-Control-Allow-Origin :*");
         return $this->twig->render('Home/form.html.twig');
     }
 
-    public function match()
+    public function results()
     {
+        error_log(print_r($_POST, TRUE));
+        $datas = decode_json($_POST);
+        var_dump($datas);
         $matchManager = new MatchManager();
         $lovers = $matchManager->selectMatch();
         foreach ($lovers as $lover) {
@@ -55,13 +60,8 @@ class HomeController extends AbstractController
             $matchManager->addMatch($totalMatch, $id);
             $soulmates = $matchManager->selectByMatch();
         }
-        foreach ($soulmates as $soulmate) {
-            var_dump($soulmate['name']);
-            var_dump($soulmate['matchRate']);
-            echo "<br>";
-            echo "<br>";
-        }
-
+        header("Access-Control-Allow-Origin :*");
+        return json_encode($_POST);
     }
 
     public function monsters()
@@ -70,8 +70,9 @@ class HomeController extends AbstractController
         $id = rand(0, 20);
         $monster = $monstersApi->getMonsterById($id);
 
+        header("Access-Control-Allow-Origin :*");
         return $this->twig->render('Home/monsters.html.twig', ["monster" => $monster,
-            ]);
+        ]);
 
         // header("Content-Type: application/json");
         // return json_encode($monsters);
