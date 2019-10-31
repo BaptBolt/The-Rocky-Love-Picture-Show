@@ -63,18 +63,17 @@ class HomeController extends AbstractController
         }
 
     }
-  
+
     public function monsters()
     {
         $monstersApi = new ApiMonstersModel();
-        $monsters = $monstersApi->getMonsters();
+        $id = rand(0, 20);
+        $monster = $monstersApi->getMonsterById($id);
 
+        return $this->twig->render('Home/monsters.html.twig', ["monster" => $monster,
+            ]);
 
-        foreach ($monsters as $monster) {
-            var_dump($monster);
-            // header("Content-Type: application/json");
-            // return json_encode($monsters);
-
-        }
+        // header("Content-Type: application/json");
+        // return json_encode($monsters);
     }
 }

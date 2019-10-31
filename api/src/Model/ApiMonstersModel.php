@@ -14,7 +14,7 @@ class ApiMonstersModel
         $response = $client->request("GET", self::URL."/monsters");
         return $response->toArray();
     }
-    public function getOneMonster(int $id)
+    public function getMonsterById(int $id)
     {
         $client = HttpClient::create();
         $response = $client->request("GET", self::URL."/monsters/".$id);
