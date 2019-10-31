@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 use App\Model\MatchManager;
+use App\Model\ApiMonstersModel;
 
 class HomeController extends AbstractController
 {
@@ -60,5 +61,16 @@ class HomeController extends AbstractController
             echo "<br>";
             echo "<br>";
         }
+
+    }
+  
+    public function monsters()
+    {
+        $monstersApi = new ApiMonstersModel();
+        $monsters = $monstersApi->getMonsters();
+
+
+        header("Content-Type: application/json");
+        return json_encode($monsters);
     }
 }
