@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'ROCKYAOE';
+  src: local('ROCKYAOE'), url(./Font/ROCKYAOE.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'GhoulFriAOE';
+  src: local('GhoulFriAOE'), url(./Font/GhoulFriAOE.ttf) format('truetype');
+}
+

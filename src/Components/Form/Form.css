@@ -1,0 +1,20 @@
+.Question{
+  color : red;
+  font-family: 'GhoulFriAOE'
+}
+
+input{
+  margin-right: 7px;
+}
+
+.Submit{
+  margin: 0;
+  padding: 0;
+}
+
+.Button{
+  height: 60px;
+}
+.lable .LastLabel{
+  margin-top: 10px;
+}

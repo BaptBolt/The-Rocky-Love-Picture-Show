@@ -1,0 +1,17 @@
+.Title{
+  font-family: 'ROCKYAOE';
+  color: red;
+  font-size: 90px;
+  letter-spacing: .4rem;
+  margin: 0;
+}
+
+.Subscribe{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.Arrow{
+  height: 70px;
+}
